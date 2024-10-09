@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div><h1>Shareable Resume Builder</h1></div> 
+    <form id="resumeform">
+        <fieldset>
+            <legend>Personal Information: </legend>
+            <p>Name:
+                <input type="text" id="name" placeholder="Enter your name" required/> 
+            </p>
+            <p>User-Name:
+                <input type="text" id="name" placeholder="Enter your User-Name" required/> 
+            </p>
+            <p>E-mail:
+                <input type="text" id="email" placeholder="Enter your E-mail" required/> 
+            </p>
+            <p>Phone Number:
+                <input type="text" id="number" placeholder="Enter your Number" required/> 
+            </p>
+        </fieldset> <br/>
+           <fieldset> <legend>Education:</legend>
+               <textarea name="Education" id="Education" placeholder="Enter your Education" required></textarea>
+            </fieldset><br/>
+            <fieldset> <legend>Work Experience:</legend>
+                <textarea name="Experience" id="Experience" placeholder="Enter your Experience" required></textarea>
+             </fieldset><br/>
+             <fieldset> <legend>Skills:</legend>
+                <textarea name="skills" id="skills" placeholder="Enter your skills" required></textarea>
+             </fieldset> <br/>
+             <button type="submit" id="submit"><b>Submit</b></button>
+    </form>
+    <div id="resumedisplay" contenteditable="true"></div>
+    <div id="shareable-link-container">
+        <div><h2>Shareable Link</h2>
+        <p>Here is your shareable link to view or edit your resume</p>
+        <a href="#" id="shareable-link" target="_blank">mahnoorashfaq@gmail.com</a>
+        <br />
+        <br />
+        <button id="pdf">Download as PDF</button>
+    </div>
+</div>
+   <script src="script.js"> </script>
+</body>
+</html>
